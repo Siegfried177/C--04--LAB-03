@@ -35,7 +35,7 @@ void temperature_calculator(){
 	float celsius = 0;
 	puts("Ingrese la temperatura en Celsius: ");
 	celsius = verificar(celsius, -273.15, 0);
-	printf("La temperatura en Fahrenheit es %.1f y en Kelvin es %.1f", (celsius * 1.8) + 32, celsius + 253);
+	printf("La temperatura en Fahrenheit es %.1f y en Kelvin es %.1f", (celsius * 1.8) + 32, celsius + 273.15);
 }
 
 void calculator(){
