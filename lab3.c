@@ -67,10 +67,8 @@ void digit_sum(){
 	puts("Ingrese el numero para sumar sus digitos");
 	num = verificar(num, 0, 0);
 
-	for(int i = 0; num != 0; i++){
+	for(int i = 0; num != 0; i++, num /= 10)
 		suma += num % 10;
-		num /= 10;
-	}
 	printf("La suma es %d",  suma);
 }
 
